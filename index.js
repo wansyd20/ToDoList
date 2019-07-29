@@ -41,7 +41,6 @@ function addToList() {
    </label>`);
  }
 }
-if()
 
 function changeTitle() {
   event.preventDefault();
