@@ -42,12 +42,31 @@ button{
 .one{
   border: 2px solid black;
   width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .two{
   border: 2px solid black;
   width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .three{
   border: 2px solid black;
   width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Muli', sans-serif;
 }

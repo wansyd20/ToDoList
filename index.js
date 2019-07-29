@@ -1,8 +1,8 @@
 var task = $('.box').val();
 var priority = $('.priority');
-var fPriority = $('#first').val();
-var sPriority = $('#second').val();
-var tPriority = $('#third').val();
+var fPriority = $('#first');
+var sPriority = $('#second');
+var tPriority = $('#third');
 var button = $('button');
 var divOne = $('.one');
 var divTwo = $('.two');
@@ -14,16 +14,16 @@ button.on("click", addToList);
 function addToList() {
   var task = $('.box').val();
   var priority = $('.priority');
-  var fPriority = $('#first').val();
-  var sPriority = $('#second').val();
-  var tPriority = $('#third').val();
+  var fPriority = $('#first');
+  var sPriority = $('#second');
+  var tPriority = $('#third');
 
- if((fPriority).checked == true) {
-   divOne.append(`${task}`);
- } else if ((sPriority).checked == true){
-   divTwo.append(`${task}`);
+ if(fPriority.checked) {
+   divOne.append(`<p>${task}</p>`);
+ } else if (sPriority.checked){
+   divTwo.append(`<p>${task}</p>`);
  } else {
-   divThree.append(`${task}`);
+   console.log(fPriority.checked);
+   divThree.append(`<p>${task}</p>`);
  }
 }
-console.log(header)
