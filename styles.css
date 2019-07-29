@@ -103,3 +103,10 @@ button{
 
   }
 }
+button{
+  text-align: center;
+}
+.indTask[type=checkbox]:checked + label {
+  color:white;
+  text-decoration: line-through;
+}

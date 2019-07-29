@@ -24,12 +24,21 @@ function addToList() {
   var tPriority = $('#third');
 
  if($('#first[type=radio]').prop('checked')) {
-   divOne.append(`<p>${task}</p>`);
+   divOne.append(`<label class="container">
+   <input type="checkbox" checked="checked">
+   <span class="checkmark"></span>${task}
+   </label>`);
  } else if ($('#second[type=radio]').prop('checked')){
-   divTwo.append(`<p>${task}</p>`);
+   divTwo.append(`<label class="container">
+   <input type="checkbox" checked="checked">
+   <span class="checkmark"></span>${task}
+   </label>`);
  } else {
    console.log(fPriority.checked==true);
-   divThree.append(`<p>${task}</p>`);
+   divThree.append(`<label class="container">
+   <input type="checkbox" checked="checked">
+   <span class="checkmark"></span>${task}
+   </label>`);
  }
 }
 
