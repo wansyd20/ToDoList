@@ -80,3 +80,26 @@ button{
 .enterName{
   font-family: 'Muli', sans-serif;
 }
+
+@media screen and (max-width: 5.8in) {
+  .parent-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .one{
+    width:90%;
+    margin-bottom: .2in;
+  }
+  .two{
+    width:90%;
+    margin-bottom: .2in;
+  }
+  .three{
+    width:90%;
+    margin-bottom: .2in;
+  }
+  }
+
+  }
+}
