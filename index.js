@@ -23,9 +23,9 @@ function addToList() {
   var sPriority = $('#second');
   var tPriority = $('#third');
 
- if(fPriority.checked==true) {
+ if($('#first[type=radio]').prop('checked')) {
    divOne.append(`<p>${task}</p>`);
- } else if (sPriority.checked==true){
+ } else if ($('#second[type=radio]').prop('checked')){
    divTwo.append(`<p>${task}</p>`);
  } else {
    console.log(fPriority.checked==true);
